@@ -30,7 +30,7 @@ public abstract class Pet implements Comparable<Pet> {
     // abstract method to be implemented by subclasses
     public abstract String speak();
 
-    // method that demonstrates pet behavior
+    // inherited method that demonstrates pet behavior
     public void doPetThings() {
         System.out.println("I'm a pet and I'm doing pet things!");
     }

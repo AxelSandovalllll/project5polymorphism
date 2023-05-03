@@ -30,12 +30,14 @@ public class PetDriver {
         // use the abstract method for each respective subclass
         // have to use System.out.println() to print the return value of the speak
         // method since method is a public abstract String
+        System.out.println("\nPet Language:\n");
         for (Pet pet : pets) {
             System.out.println(pet.getName() + " " + pet.speak());
         }
 
         // use the doPetThings method for each respective subclass
         // can run method because it is public void
+        System.out.println("\nPet Actions:\n");
         for (Pet pet : pets) {
             pet.doPetThings();
         }
@@ -43,7 +45,7 @@ public class PetDriver {
         // use the compareTo method to compare pets by age
         Arrays.sort(pets);
 
-        System.out.println("\n Sorted pets by age:");
+        System.out.println("\nSorted pets by age:\n ");
         // Display the sorted pets
         for (Pet pet : pets) {
             if (pet.getAge() == 1) {
@@ -52,6 +54,6 @@ public class PetDriver {
                 System.out.println(pet.getName() + " is " + pet.getAge() + " years old.");
             }
         }
-
+        System.out.println("\n");
     }
 }
